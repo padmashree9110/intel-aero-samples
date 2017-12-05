@@ -15,7 +15,7 @@ $ apt install ros-kinetic-mavros
 ## Clone and build ROS-examples
 ```
 $ git clone https://github.intel.com/drones/ros-examples.git
-$ catkin_make
+$ catkin build
 ```
 To add the workspace to your ROS environment you need to source the generated setup file:
 ```
