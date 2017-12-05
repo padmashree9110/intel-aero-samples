@@ -12,7 +12,7 @@ Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
 $ apt install ros-kinetic-mavros
 ```
-## Clone and build Ros-examples
+## Clone and build ROS-examples
 ```
 $ git clone https://github.intel.com/drones/ros-examples.git
 $ catkin_make
