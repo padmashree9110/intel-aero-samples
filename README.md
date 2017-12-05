@@ -24,7 +24,7 @@ To add the workspace to your ROS environment you need to source the generated se
 
 $ . ~/ros-examples/devel/setup.bash
 ```
-###Update Packages
+### Update Packages
 ```
 $ apt-get update
 ```
