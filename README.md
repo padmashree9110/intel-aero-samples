@@ -24,8 +24,7 @@ To add the workspace to your ROS environment you need to source the generated se
 
 $ . ~/ros-examples/devel/setup.bash
 ```
-After `catkin_make` build is complete, ROS Node executable is generated in `devel/lib/mavros_offboard_ctrl/node` - this is the application by itself.
-
+###Update Packages
 ```
 $ apt-get update
 ```
@@ -35,11 +34,12 @@ MAVROS automatically launches `roscore` which enables communication across ROS n
 $roslaunch mavros px4.launch fcu_url:="udp://:14540@<Aero-IP>:14557"
 ```
 
-Goto **Aero terminal 1** and run the ROS Application node
+Open another terminal  and run the ROS launch file
 ```
 # roslaunch aero_telemetry_simple aero_telemetry_simple.launch
 ```
 This successfully launches launch file  which connects to Aero flight Controller via MAVROS.
+
 
 ## On docker ROS
 
