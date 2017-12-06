@@ -45,6 +45,8 @@ This successfully launches launch file  which connects to Aero flight Controller
 
 ### PREREQUISITES
 
+Open two terminals (docker1 and docker2) and do below steps in both.
+
 #### ROS
 Pull ros packages using docker
 ```
@@ -57,7 +59,7 @@ $ docker run -it --privileged ros
 this opens a ROS shell with container-id
 
 #### MAVROS
-Install MAVROS packages
+Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
 # apt install ros-kinetic-mavros ros-kinetic-mavros-extras
 ```
