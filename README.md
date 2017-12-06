@@ -14,7 +14,11 @@ Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
 $ apt install ros-kinetic-mavros ros-kinetic-mavros-extras
 
-Run mavros/scripts/install_geographiclib_dataset.sh
+```
+Then install GeographicLib datasets by running the install_geographiclib_datasets.sh script:
+```
+$ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+$ ./install_geographiclib_datasets.sh
 ```
 ### Clone and build ROS-examples
 ```
@@ -44,7 +48,7 @@ This successfully launches launch file  which connects to Aero flight Controller
 
 ## On docker ROS
 
-### PREREQUISITES
+### Prerequisites
 
 Open two terminals (docker1 and docker2) and do below steps in both.
 
@@ -64,8 +68,12 @@ Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
 # apt install ros-kinetic-mavros ros-kinetic-mavros-extras
 ```
-Run mavros/scripts/install_geographiclib_dataset.sh
 
+Then install GeographicLib datasets by running the install_geographiclib_datasets.sh script:
+```
+$ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+$ ./install_geographiclib_datasets.sh
+```
 
 ### Update Packages
 ```
