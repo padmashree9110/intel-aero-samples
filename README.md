@@ -19,7 +19,6 @@ Then install GeographicLib datasets by running the install_geographiclib_dataset
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
 ```
-
 ### Clone and build ROS-examples
 ```
 $ git clone https://github.intel.com/drones/ros-examples.git
