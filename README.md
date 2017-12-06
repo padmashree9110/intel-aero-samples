@@ -3,12 +3,12 @@
 This doc guides how to build and run ros-examples.
 ## On native ROS
 
-### PREREQUISITES
+### Prerequisites
 
 #### ROS
 Install [ROS](http://wiki.ros.org/kinetic/Installation/Ubuntu) pacakges
 
-### MAVROS
+#### MAVROS
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 
 ```
@@ -19,11 +19,12 @@ Run mavros/scripts/install_geographiclib_dataset.sh
 ### Clone and build ROS-examples
 ```
 $ git clone https://github.intel.com/drones/ros-examples.git
+$ cd ros-examples
 $ catkin build
 ```
 To add the workspace to your ROS environment you need to source the generated setup file:
 ```
-$ . ~/ros-examples/devel/setup.bash
+$ source devel/setup.bash
 ```
 ### Update Packages
 ```
@@ -75,12 +76,13 @@ Run mavros/scripts/install_geographiclib_dataset.sh
 ### Clone and build ROS-examples
 ```
 $ git clone https://github.intel.com/drones/ros-examples.git
+$ cd ros-examples
 $ catkin build
 ```
 
 To add the workspace to your ROS environment you need to source the generated setup file:
 ```
-$ . ~/ros-examples/devel/setup.bash
+$ source devel/setup.bash
 ```
 ### Export proxy settings
 ```
