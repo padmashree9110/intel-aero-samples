@@ -8,7 +8,7 @@ This doc guides how to build and run ros-examples.
 #### ROS
 Install [ROS](http://wiki.ros.org/kinetic/Installation/Ubuntu) pacakges
 
-#apt install ros-kinetic-mavros### MAVROS
+### MAVROS
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 
 ```
@@ -48,18 +48,18 @@ This successfully launches launch file  which connects to Aero flight Controller
 #### ROS
 Pull ros packages using docker
 ```
-$docker pull ros
+$ docker pull ros
 ```
 Run ROS in docker container
 ```
-$docker run -it --privileged ros
+$ docker run -it --privileged ros
 ```
 this opens a ROS shell with container-id
 
 #### MAVROS
 Install MAVROS packages
 ```
-#apt install ros-kinetic-mavros ros-kinetic-mavros-extras
+# apt install ros-kinetic-mavros ros-kinetic-mavros-extras
 ```
 Run mavros/scripts/install_geographiclib_dataset.sh
 
@@ -76,7 +76,7 @@ $ . ~/ros-examples/devel/setup.bash
 
 ### Update Packages
 ```
-#apt-get update
+# apt-get update
 ```
 
 ### Launching MAVROS
