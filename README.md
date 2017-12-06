@@ -10,7 +10,6 @@ Install [ROS](http://wiki.ros.org/kinetic/Installation/Ubuntu) pacakges
 
 #### MAVROS
 Install [MAVROS](http://wiki.ros.org/mavros) packages
-
 ```
 $ apt install ros-kinetic-mavros ros-kinetic-mavros-extras
 
@@ -75,7 +74,6 @@ Then install GeographicLib datasets by running the install_geographiclib_dataset
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
 ```
-
 ### Update Packages
 ```
 # apt-get update
