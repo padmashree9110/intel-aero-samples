@@ -65,6 +65,13 @@ Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
 Run mavros/scripts/install_geographiclib_dataset.sh
 
+
+### Update Packages
+```
+# apt-get update
+```
+## Running ROS-examples in Docker1
+
 ### Clone and build ROS-examples
 ```
 $ git clone https://github.intel.com/drones/ros-examples.git
@@ -75,13 +82,29 @@ To add the workspace to your ROS environment you need to source the generated se
 ```
 $ . ~/ros-examples/devel/setup.bash
 ```
-
-### Update Packages
+### Export proxy settings
 ```
-# apt-get update
+export ROS_IP=IP of docker2
+export ROS_MASTER_URI="http://IP of docker2:11311"
+```
+### Run ROS application using
+```
+# roslaunch aero_telemetry_simple aero_telemetry_simple.launch
 ```
 
-### Launching MAVROS
+## Launching MAVROS(In docker2)
+
+### Export proxy settings
+```
+export ROS_IP=IP of docker2
+export ROS_MASTER_URI="http://IP of docker2:11311"
+```
+### Launch mavros
+```
+#roslaunch mavros px4.launch fcu_url:="udp://:14540@<Aero-IP>:14557"
+```
+
+
 
 
 
