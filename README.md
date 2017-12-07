@@ -53,7 +53,7 @@ Open another terminal  and run the ROS launch file
 ```
 $ roslaunch aero_takeoff_land aero_takeoff_land.launch
 ```
-This successfully launches takeoff_land launch filei, which connects to Aero flight Controller via MAVROS.
+This successfully launches `aero_takeoff_land.launch` launch file, which connects to Aero flight Controller via MAVROS.
 
 ## On Docker ROS
 
