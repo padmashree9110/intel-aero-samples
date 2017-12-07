@@ -28,7 +28,6 @@ $ ./install_geographiclib_datasets.sh
 #### Catkin
 Install catkin tools
 ```
-$ sudo apt-get update
 $ sudo apt-get install python-catkin-tools
 ```
 
@@ -93,8 +92,7 @@ Then install GeographicLib datasets by running the `install_geographiclib_datase
 ### Catkin
 Install catkin tools
 ```
-# sudo apt-get update
-# sudo apt-get install python-catkin-tools
+#  apt-get install python-catkin-tools
 ```
 
 
