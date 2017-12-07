@@ -14,7 +14,7 @@ Install [MAVROS](http://wiki.ros.org/mavros) packages
 $ apt install ros-kinetic-mavros ros-kinetic-mavros-extras
 
 ```
-Then install GeographicLib datasets by running the install_geographiclib_datasets.sh script:
+Then install GeographicLib datasets by running the `install_geographiclib_datasets.sh` script:
 ```
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
@@ -78,7 +78,7 @@ Install [MAVROS](http://wiki.ros.org/mavros) packages
 # apt install ros-kinetic-mavros ros-kinetic-mavros-extras
 ```
 
-Then install GeographicLib datasets by running the install_geographiclib_datasets.sh script:
+Then install GeographicLib datasets by running the `install_geographiclib_datasets.sh` script:
 ```
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
@@ -139,7 +139,7 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 
 **Before you run** `aero_fly_mission`:
 * Plan your missions in [QGC](http://qgroundcontrol.com) & save them to a file.
-Note: `mavros_fly_mission` supports only QGC mission plan now.
+Note: `aero_fly_mission` supports only QGC mission plan now.
 
 ![Qgc_plan](qgc_plan?raw=true "Optional Title")
 
