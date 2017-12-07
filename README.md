@@ -100,7 +100,7 @@ Install catkin packages
 
 ### Export proxy settings
 ```
-export ROS_IP=<IP of docker1> Ip can be known from `docker network inspect bridge`
+export ROS_IP=<IP of docker1> Ip can be known from **docker network inspect bridge**
 export ROS_MASTER_URI="http://<IP of docker1>:11311"
 ```
 
