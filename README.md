@@ -8,6 +8,10 @@ This doc guides how to build and run ros-examples.
 #### Ros
 Install [ROS](http://wiki.ros.org/kinetic/Installation/Ubuntu) pacakges
 
+ Update Packages
+```
+$ apt-get update
+```
 #### Mavros
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
@@ -38,10 +42,6 @@ To add the workspace to your ROS environment you need to source the generated se
 $ source devel/setup.bash
 ```
 
-### Update Packages
-```
-$ apt-get update
-```
 
 ### Launching Mavros
 MAVROS automatically launches `roscore` which enables communication across ROS nodes.
@@ -72,6 +72,10 @@ $ docker run -it --privileged ros
 ```
 this opens a ROS shell with container-id
 
+ Update Packages
+```
+# apt-get update
+```
 #### Mavros
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
@@ -91,10 +95,6 @@ Install catkin packages
 #sudo apt-get install python-catkin-tools
 ```
 
-### Update Packages
-```
-# apt-get update
-```
 
 ## Launching Mavros (In docker1)
 
