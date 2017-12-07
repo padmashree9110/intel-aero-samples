@@ -19,6 +19,7 @@ Then install GeographicLib datasets by running the install_geographiclib_dataset
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
 ```
+
 ### Catkin
 Install catkin packages
 ```
@@ -36,10 +37,12 @@ To add the workspace to your ROS environment you need to source the generated se
 ```
 $ source devel/setup.bash
 ```
+
 ### Update Packages
 ```
 $ apt-get update
 ```
+
 ### Launching MAVROS
 MAVROS automatically launches `roscore` which enables communication across ROS nodes.
 ```
@@ -80,17 +83,33 @@ Then install GeographicLib datasets by running the install_geographiclib_dataset
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
 ```
+
 ### Catkin
 Install catkin packages
 ```
 $sudo apt-get update
 $sudo apt-get install python-catkin-tools
 ```
+
 ### Update Packages
 ```
 # apt-get update
 ```
-## Running ROS-examples(In Docker1)
+
+## Launching MAVROS(In docker1)
+
+### Export proxy settings
+```
+export ROS_IP=<IP of docker1>
+export ROS_MASTER_URI="http://<IP of docker1>:11311"
+```
+
+### Launch mavros
+```
+#roslaunch mavros px4.launch fcu_url:="udp://:14540@<Aero-IP>:14557"
+```
+
+## Running ROS-examples(In Docker2)
 
 ### Clone and build ROS-examples
 ```
@@ -103,31 +122,14 @@ To add the workspace to your ROS environment you need to source the generated se
 ```
 $ source devel/setup.bash
 ```
+
 ### Export proxy settings
 ```
-export ROS_IP=<IP of docker2>
-export ROS_MASTER_URI="http://<IP of docker2>:11311"
+export ROS_IP=<IP of docker1>
+export ROS_MASTER_URI="http://<IP of docker1>:11311"
 ```
+
 ### Run ROS application using
 ```
 # roslaunch aero_telemetry_simple aero_telemetry_simple.launch
 ```
-
-## Launching MAVROS(In docker2)
-
-### Export proxy settings
-```
-export ROS_IP=<IP of docker2>
-export ROS_MASTER_URI="http://<IP of docker2>:11311"
-```
-### Launch mavros
-```
-#roslaunch mavros px4.launch fcu_url:="udp://:14540@<Aero-IP>:14557"
-```
-
-
-
-
-
-
-
