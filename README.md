@@ -51,7 +51,7 @@ $roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
 
 Open another terminal  and run the ROS launch file
 ```
-# roslaunch aero_telemetry_simple aero_telemetry_simple.launch
+# roslaunch aero_telemetry_simple aero_takeoff_land.launch
 ```
 This successfully launches launch file  which connects to Aero flight Controller via MAVROS.
 
@@ -131,7 +131,7 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 
 ### Run ROS application using
 ```
-# roslaunch aero_telemetry_simple aero_telemetry_simple.launch
+# roslaunch aero_telemetry_simple aero_takeoff_land.launch
 ```
 
 # Running Examples : 
