@@ -5,10 +5,10 @@ This doc guides how to build and run ros-examples.
 
 ### Prerequisites
 
-#### ROS
+#### Ros
 Install [ROS](http://wiki.ros.org/kinetic/Installation/Ubuntu) pacakges
 
-#### MAVROS
+#### Mavros
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
 $ apt install ros-kinetic-mavros ros-kinetic-mavros-extras
@@ -43,10 +43,10 @@ $ source devel/setup.bash
 $ apt-get update
 ```
 
-### Launching MAVROS
+### Launching Mavros
 MAVROS automatically launches `roscore` which enables communication across ROS nodes.
 ```
-$roslaunch mavros px4.launch fcu_url:="udp://:14540@<Aero-IP>:14557"
+$roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
 ```
 
 Open another terminal  and run the ROS launch file
@@ -55,13 +55,13 @@ Open another terminal  and run the ROS launch file
 ```
 This successfully launches launch file  which connects to Aero flight Controller via MAVROS.
 
-## On docker ROS
+## On Docker ROS
 
 ### Prerequisites
 
 Open two terminals (docker1 and docker2) and do below steps in both.
 
-#### ROS
+#### Ros
 Pull ros packages using docker
 ```
 $ docker pull ros
@@ -72,7 +72,7 @@ $ docker run -it --privileged ros
 ```
 this opens a ROS shell with container-id
 
-#### MAVROS
+#### Mavros
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
 # apt install ros-kinetic-mavros ros-kinetic-mavros-extras
@@ -96,7 +96,7 @@ Install catkin packages
 # apt-get update
 ```
 
-## Launching MAVROS(In docker1)
+## Launching Mavros (In docker1)
 
 ### Export proxy settings
 ```
@@ -104,9 +104,9 @@ export ROS_IP=<IP of docker1>
 export ROS_MASTER_URI="http://<IP of docker1>:11311"
 ```
 
-### Launch mavros
+### Launch Mavros
 ```
-#roslaunch mavros px4.launch fcu_url:="udp://:14540@<Aero-IP>:14557"
+#roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
 ```
 
 ## Running ROS-examples(In Docker2)
