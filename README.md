@@ -68,7 +68,7 @@ $ docker pull ros
 ```
 Run ROS in docker container
 ```
-$ docker run -it --privileged ros
+# docker run -it --privileged ros
 ```
 this opens a ROS shell with container-id
 
@@ -84,8 +84,8 @@ Install [MAVROS](http://wiki.ros.org/mavros) packages
 
 Then install GeographicLib datasets by running the `install_geographiclib_datasets.sh` script:
 ```
-$ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
-$ ./install_geographiclib_datasets.sh
+# wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+# ./install_geographiclib_datasets.sh
 ```
 
 ### Catkin
@@ -113,14 +113,14 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 
 ### Clone and build ROS-examples
 ```
-$ git clone https://github.intel.com/drones/ros-examples.git
-$ cd ros-examples
-$ catkin build
+# git clone https://github.intel.com/drones/ros-examples.git
+# cd ros-examples
+# catkin build
 ```
 
 To add the workspace to your ROS environment you need to source the generated setup file:
 ```
-$ source devel/setup.bash
+# source devel/setup.bash
 ```
 
 ### Export proxy settings
@@ -145,7 +145,7 @@ Note: `aero_fly_mission` supports only QGC mission plan now.
 
 Running `aero_fly_mission` example
 ```
-$roslaunch aero_fly_mission aero_fly_mission.launch file
+#roslaunch aero_fly_mission aero_fly_mission.launch file
 ```
 Note: Give absolute path to the file
 
