@@ -27,8 +27,8 @@ $ ./install_geographiclib_datasets.sh
 ### Catkin
 Install catkin packages
 ```
-$sudo apt-get update
-$sudo apt-get install python-catkin-tools
+$ sudo apt-get update
+$ sudo apt-get install python-catkin-tools
 ```
 
 ### Clone and build ROS-examples
@@ -46,12 +46,12 @@ $ source devel/setup.bash
 ### Launching Mavros
 MAVROS automatically launches `roscore` which enables communication across ROS nodes.
 ```
-$roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
+$ roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
 ```
 
 Open another terminal  and run the ROS launch file
 ```
-# roslaunch aero_takeoff_land aero_takeoff_land.launch
+$ roslaunch aero_takeoff_land aero_takeoff_land.launch
 ```
 This successfully launches launch file  which connects to Aero flight Controller via MAVROS.
 
@@ -91,8 +91,8 @@ Then install GeographicLib datasets by running the `install_geographiclib_datase
 ### Catkin
 Install catkin packages
 ```
-#sudo apt-get update
-#sudo apt-get install python-catkin-tools
+# sudo apt-get update
+# sudo apt-get install python-catkin-tools
 ```
 
 
@@ -106,7 +106,7 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 
 ### Launch Mavros
 ```
-#roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
+# roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
 ```
 
 ## Running ROS-examples(In Docker2)
@@ -145,7 +145,7 @@ Note: `aero_fly_mission` supports only QGC mission plan now.
 
 Running `aero_fly_mission` example
 ```
-#roslaunch aero_fly_mission aero_fly_mission.launch file
+# roslaunch aero_fly_mission aero_fly_mission.launch file
 ```
 Note: Give absolute path to the file
 
