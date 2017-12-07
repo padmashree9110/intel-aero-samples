@@ -144,7 +144,7 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 * Plan your missions in [QGC](http://qgroundcontrol.com) & save them to a file.
 Note: `aero_fly_mission` supports only QGC mission plan now.
 
-![Qgc_plan](qgc_plan?raw=true "Optional Title")
+![Qgc_plan](https://github.com/padmashree9110/sample-apps.git)
 
 Running `aero_fly_mission` example
 ```
