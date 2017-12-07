@@ -19,6 +19,13 @@ Then install GeographicLib datasets by running the install_geographiclib_dataset
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
 ```
+### Catkin
+Install catkin packages
+```
+$sudo apt-get update
+$sudo apt-get install python-catkin-tools
+```
+
 ### Clone and build ROS-examples
 ```
 $ git clone https://github.intel.com/drones/ros-examples.git
@@ -73,6 +80,12 @@ Then install GeographicLib datasets by running the install_geographiclib_dataset
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
 ```
+### Catkin
+Install catkin packages
+```
+$sudo apt-get update
+$sudo apt-get install python-catkin-tools
+```
 ### Update Packages
 ```
 # apt-get update
@@ -92,8 +105,8 @@ $ source devel/setup.bash
 ```
 ### Export proxy settings
 ```
-export ROS_IP=IP of docker2
-export ROS_MASTER_URI="http://IP of docker2:11311"
+export ROS_IP=<IP of docker2>
+export ROS_MASTER_URI="http://<IP of docker2>:11311"
 ```
 ### Run ROS application using
 ```
@@ -104,8 +117,8 @@ export ROS_MASTER_URI="http://IP of docker2:11311"
 
 ### Export proxy settings
 ```
-export ROS_IP=IP of docker2
-export ROS_MASTER_URI="http://IP of docker2:11311"
+export ROS_IP=<IP of docker2>
+export ROS_MASTER_URI="http://<IP of docker2>:11311"
 ```
 ### Launch mavros
 ```
