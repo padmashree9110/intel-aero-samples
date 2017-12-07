@@ -134,21 +134,19 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 # roslaunch aero_telemetry_simple aero_telemetry_simple.launch
 ```
 
-# EXAMPLE : Fly mission
+# Running Examples : 
+## Fly mission
 
-* Loads the QGC mission plan (passed in command-line)
-* Composes waypoints & sends them to the vehicle
-* Sets Vehicle to MISSION mode. This causes Vehicle to executes the mission.
-
-**Before you run** `mavros_fly_mission`:
+**Before you run** `aero_fly_mission`:
 * Plan your missions in [QGC](http://qgroundcontrol.com) & save them to a file.
 Note: `mavros_fly_mission` supports only QGC mission plan now.
+![alt tag](home/pmandri/Desktop/qgc_plan)
 
-Running fly_mission examples
+Running `aero_fly_mission` example
 ```
 $roslaunch aero_fly_mission aero_fly_mission.launch file
-Note: Give absolute path to the file
 ```
+Note: Give absolute path to the file
 
 
 
