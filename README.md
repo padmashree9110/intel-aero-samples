@@ -26,7 +26,7 @@ $ ./install_geographiclib_datasets.sh
 ```
 
 #### Catkin
-Install catkin packages
+Install catkin tools
 ```
 $ sudo apt-get update
 $ sudo apt-get install python-catkin-tools
@@ -54,7 +54,7 @@ Open another terminal  and run the ROS launch file
 ```
 $ roslaunch aero_takeoff_land aero_takeoff_land.launch
 ```
-This successfully launches takeoff_land launch file  which connects to Aero flight Controller via MAVROS.
+This successfully launches takeoff_land launch filei, which connects to Aero flight Controller via MAVROS.
 
 ## On Docker ROS
 
@@ -91,7 +91,7 @@ Then install GeographicLib datasets by running the `install_geographiclib_datase
 ```
 
 ### Catkin
-Install catkin packages
+Install catkin tools
 ```
 # sudo apt-get update
 # sudo apt-get install python-catkin-tools
@@ -104,7 +104,7 @@ Install catkin packages
 ```
 export ROS_IP=<IP of docker1> 
 ```
-Ip can be known from docker network inspect bridge
+Ip can be known from `docker network inspect bridge`
 ```
 export ROS_MASTER_URI="http://<IP of docker1>:11311"
 ```
@@ -114,7 +114,7 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 # roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
 ```
 
-## Running ROS-examples(In Docker2)
+## Running ROS-examples (In Docker2)
 
 ### Clone and build ROS-examples
 ```
@@ -139,7 +139,7 @@ export ROS_MASTER_URI="http://<IP of docker1>:11311"
 # roslaunch aero_takeoff_land aero_takeoff_land.launch
 ```
 
-# Running Examples : 
+# Running Other Examples : 
 ## Fly mission
 
 **Before you run** `aero_fly_mission`:
