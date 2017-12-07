@@ -10,21 +10,22 @@ Install [ROS](http://wiki.ros.org/kinetic/Installation/Ubuntu) pacakges
 
  Update Packages
 ```
-$ apt-get update
+$ sudo apt-get update
 ```
 #### Mavros
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
-$ apt install ros-kinetic-mavros ros-kinetic-mavros-extras
+$ sudo apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
 
 ```
 Then install GeographicLib datasets by running the `install_geographiclib_datasets.sh` script:
 ```
 $ wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+# chmod +x install_geographiclib_datasets.sh
 $ ./install_geographiclib_datasets.sh
 ```
 
-### Catkin
+#### Catkin
 Install catkin packages
 ```
 $ sudo apt-get update
@@ -43,7 +44,7 @@ $ source devel/setup.bash
 ```
 
 
-### Launching Mavros
+### Launch Mavros and Run ROS-examples
 MAVROS automatically launches `roscore` which enables communication across ROS nodes.
 ```
 $ roslaunch mavros px4.launch fcu_url:="tcp://<Aero-IP>:5760?ids=1,1"
@@ -53,13 +54,13 @@ Open another terminal  and run the ROS launch file
 ```
 $ roslaunch aero_takeoff_land aero_takeoff_land.launch
 ```
-This successfully launches launch file  which connects to Aero flight Controller via MAVROS.
+This successfully launches takeoff_land launch file  which connects to Aero flight Controller via MAVROS.
 
 ## On Docker ROS
 
 ### Prerequisites
 
-Open two terminals (docker1 and docker2) and do below steps in both.
+Open two terminals (docker1 and docker2) and do below steps in **both**.
 
 #### Ros
 Pull ros packages using docker
@@ -79,12 +80,13 @@ this opens a ROS shell with container-id
 #### Mavros
 Install [MAVROS](http://wiki.ros.org/mavros) packages
 ```
-# apt install ros-kinetic-mavros ros-kinetic-mavros-extras
+# apt-get install ros-kinetic-mavros ros-kinetic-mavros-extras
 ```
 
 Then install GeographicLib datasets by running the `install_geographiclib_datasets.sh` script:
 ```
 # wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+# chmod +x install_geographiclib_datasets.sh
 # ./install_geographiclib_datasets.sh
 ```
 
@@ -100,7 +102,10 @@ Install catkin packages
 
 ### Export proxy settings
 ```
-export ROS_IP=<IP of docker1> Ip can be known from docker network inspect bridge
+export ROS_IP=<IP of docker1> 
+```
+Ip can be known from docker network inspect bridge
+```
 export ROS_MASTER_URI="http://<IP of docker1>:11311"
 ```
 
@@ -145,9 +150,8 @@ Note: `aero_fly_mission` supports only QGC mission plan now.
 
 Running `aero_fly_mission` example
 ```
-# roslaunch aero_fly_mission aero_fly_mission.launch file
+# roslaunch aero_fly_mission aero_fly_mission.launch file:=<absolute path to QGC mission plan>
 ```
-Note: Give absolute path to the file
 
 
 
